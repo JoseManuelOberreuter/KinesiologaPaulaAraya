@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Agendar sesión</title>
+
+    <!-- FADE ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Poppins:wght@200&display=swap" rel="stylesheet">    
+
+  </head>
+  <body>
+
+    <header>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tratamientos.html">Tratamientos</a></li>
+        <li><a href="info.html">Información</a></li>
+        <li><a href="contact.html">Agendar sesión</a></li>
+      </ul>
+      <div class="home">
+        <a href="index.html"><span>Paula Araya Kinesiología</span></a>
+      </div>
+    </header>
+  
+
+    <form id="contactForm">
+      <h1>Agendar sesión</h1>
+      <div>
+        <label for="name" >Nombre de paciente: </label>
+        <input autofocus required type="text" id="name" maxlength="100" placeholder="Ingrese el nombre acá..." onkeyup="checkName()">
+        <small class="error" id="errorName"><b>Debes igresar un nombre</b></small>
+      </div>
+      <div>
+        <label for="rut" class="text-dark">Rut de paciente: </label>
+        <input required type="text" id="rut"  maxlength="10" placeholder="Ingrese el rut sin punto y con guion..." onkeyup="checkRut()">
+        <small class="error" id="errorRut"><b>Debes igresar un rut</b></small>
+      </div>
+      <div>
+        <label for="email" class="text-dark">Email de contacto: </label>
+        <input required type="email" id="email"  placeholder="Ingrese el email acá..." onkeyup="checkEmail()">
+        <small class="error" id="errorEmail"><b>Debes igresar un email</b></small>
+      </div>
+      <div>
+        <label for="phone" class="text-dark">Teléfono de contacto: </label>
+        <input required type="tel" id="phone"  placeholder="Ingrese el número acá..." onkeyup="checkPhone()">
+        <small class="error" id="errorPhone"><b>Debes igresar un telefono</b></small>
+      </div>
+      <div>
+        <label for="comuna" class="text-dark">Comuna: </label>
+        <input required type="text" id="comuna"  placeholder="Ingrese la comuna a realizar el domicilio..." onkeyup="checkComuna()">
+        <small class="error" id="errorComuna"><b>Debes igresar una comuna</b></small>
+      </div>
+      <div>
+        <label for="message" class="text-dark">Motivo de consulta: </label>
+        <textarea required id="message" placeholder="Escriba acá el motivo de consulta..." onkeyup="checkMessage()"></textarea>
+        <small class="error" id="errorMessage"><b>Debes igresar un mensaje</b></small>
+      </div>
+      <div>
+        <button id="buttonSend" type="submit" value="submit">Enviar formulario</button>         
+      </div>   
+    </form>
+
+    <div id="afterSend" class="post" data-aos="zoom-in">
+      <div class="post-text">
+
+        <h1>¡Formulario enviado con éxito!</h1>
+        <br>
+        <h2>Muchas gracias por contactar conmigo, por favor espere con paciencia, me contactare con usted a la brevedad.</h2>
+        <br><br>
+        <p>Para saber mas información mí o de los tratamientos haga click en los botones</p>
+
+        <a href="info.html"><button>Información</button></a>
+        <a href="tratamientos.html"><button>Tratamientos</button></a>
+        <br>
+        <small>¡No olvides seguirme en mis redes sociales para saber mas detalles!</small>
+
+      </div>
+    </div>
+
+    <a href="index.html"><img id="logo" src="img/kinepaulalogo.png" alt="Logo"></a>
+
+
+    <footer>
+      <p>Sigueme en mis redes sociales: </p>
+        <a href="https://www.instagram.com/kine.paularaya/?hl=es-la">Instagram</a>
+        <a href="https://web.facebook.com/Klga-Paula-Araya-100271261410744">Facebook</a>
+        <a href="https://api.whatsapp.com/send?phone=56992826286&text=">Whatsapp</a>
+    </footer>
+
+  
+  
+
+  <!-- ERROR JS FORM -->
+  <script src="../contact.js"></script>
+
+  <!-- FADE ANIMATION -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- functions js -->
+  <script src="contact.js"></script>
+
+  </body>
+</html>
