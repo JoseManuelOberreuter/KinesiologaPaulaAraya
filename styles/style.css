@@ -126,10 +126,16 @@ body {
 .info-text {
     text-align: center;
     margin: 0 auto;
+    margin-top: 50px;
 }
 .info-text h1{
     color: #42B4FD;
     font-size: 50px;
+    margin-bottom: 25px;
+}
+.info-text p {
+    font-size: 20px;
+    text-align: justify;
 }
 
 
@@ -220,7 +226,7 @@ header ul {
 .post {
     display: flex;
     margin: 50px auto;
-    height: 400px;
+    height: auto;
     width: 1199px;
     color: #fff;
     background-color: #42B4FD;
@@ -235,6 +241,18 @@ header ul {
 .post-text h2 {
     margin-bottom: 15px;
 }
+.post-text ul {
+    margin-left: 50px;
+}
+.post-text ul li {
+    margin: 10px auto;
+}
+
+.post-text p, .post-text ul {
+    text-align: justify;
+}
+
+
 .post-left {
     background-color: #5271FF;
 }
