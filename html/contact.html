@@ -35,36 +35,36 @@
     </header>
   
 
-    <form id="contactForm">
+    <form id="contactForm" action="https://formsubmit.co/paula.arayagarate@gmail.com" method="POST">
       <h1>Agendar sesión</h1>
       <div>
         <label for="name" >Nombre de paciente: </label>
-        <input autofocus required type="text" id="name" maxlength="100" placeholder="Ingrese el nombre acá..." onkeyup="checkName()">
+        <input autofocus required type="text" id="name" name="Nombre" maxlength="100" placeholder="Ingrese el nombre acá..." onkeyup="checkName()">
         <small class="error" id="errorName"><b>Debes igresar un nombre</b></small>
       </div>
       <div>
         <label for="rut" class="text-dark">Rut de paciente: </label>
-        <input required type="text" id="rut"  maxlength="10" placeholder="Ingrese el rut sin punto y con guion..." onkeyup="checkRut()">
+        <input required type="text" id="rut" name="Rut" maxlength="10" placeholder="Ingrese el rut sin punto y con guion..." onkeyup="checkRut()">
         <small class="error" id="errorRut"><b>Debes igresar un rut</b></small>
       </div>
       <div>
         <label for="email" class="text-dark">Email de contacto: </label>
-        <input required type="email" id="email"  placeholder="Ingrese el email acá..." onkeyup="checkEmail()">
+        <input required type="email" id="email" name="Mail" placeholder="Ingrese el email acá..." onkeyup="checkEmail()">
         <small class="error" id="errorEmail"><b>Debes igresar un email</b></small>
       </div>
       <div>
         <label for="phone" class="text-dark">Teléfono de contacto: </label>
-        <input required type="tel" id="phone"  placeholder="Ingrese el número acá..." onkeyup="checkPhone()">
+        <input required type="tel" id="phone" name="Telefono" placeholder="Ingrese el número acá..." onkeyup="checkPhone()">
         <small class="error" id="errorPhone"><b>Debes igresar un telefono</b></small>
       </div>
       <div>
         <label for="comuna" class="text-dark">Comuna: </label>
-        <input required type="text" id="comuna"  placeholder="Ingrese la comuna a realizar el domicilio..." onkeyup="checkComuna()">
+        <input required type="text" id="comuna" name="Comuna" placeholder="Ingrese la comuna a realizar el domicilio..." onkeyup="checkComuna()">
         <small class="error" id="errorComuna"><b>Debes igresar una comuna</b></small>
       </div>
       <div>
         <label for="message" class="text-dark">Motivo de consulta: </label>
-        <textarea required id="message" placeholder="Escriba acá el motivo de consulta..." onkeyup="checkMessage()"></textarea>
+        <textarea required id="message" name="Mensaje" placeholder="Escriba acá el motivo de consulta..." onkeyup="checkMessage()"></textarea>
         <small class="error" id="errorMessage"><b>Debes igresar un mensaje</b></small>
       </div>
       <div>
